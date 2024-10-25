@@ -1,0 +1,37 @@
+/* ! ----------- navbar -------------*/
+@media screen and (max-width:992px) {
+    .container{
+        margin: 0;
+        padding: 0;
+    }
+    .navbar-brand{
+        margin-left: 20px;
+    }
+    .navbar-toggler-icon{
+        color: white !important;
+    }
+    .navbar-nav{
+        position: absolute;
+        background-color: white;
+        text-align: center;
+        color: #343434;
+        width: 100%;
+        padding-block: 20px;
+    }
+    .nav-link{
+        color:#343434 ;
+    }
+    .navbar-nav a::before{
+        margin-left: 43%;
+    }
+body:not(:has(:target)) .home-link::before,
+body:has(.home:target) .home-link::before,
+body:has(.about:target) .about-link::before,
+body:has(.services:target) .services-link::before,
+body:has(.portfolio:target) .portfolio-link::before,
+body:has(.Testimonials:target) .Testimonials-link::before,
+body:has(.our-team:target) .our-team-link::before,
+body:has(.contact:target) .contact-link::before{
+    width: 10%;
+}
+}
